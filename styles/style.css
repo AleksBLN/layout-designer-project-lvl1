@@ -1,0 +1,42 @@
+li {
+	list-style-type: none;
+}
+header {
+	position: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	top: 0;
+	left: 0;
+	height: 70px;
+	width: 100%;
+	background: #f0f0f0;
+}
+.logo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 270px;
+	padding: 10px;
+}
+.logo img {
+	width: 60px;
+	margin-right: 40px;
+}
+.name {
+	font-size: 22px;
+	color: #776A5E;
+}
+.nav {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.nav li {
+	margin-right: 35px;
+	font-size: 22px;
+	color: #776A5E;
+}
+main {
+	margin-top: 80px;
+}
