@@ -1,6 +1,47 @@
-li {
-	list-style-type: none;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
+ HTML5 display-role reset for older browsers 
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 header {
 	position: fixed;
 	display: flex;
@@ -10,20 +51,20 @@ header {
 	left: 0;
 	height: 70px;
 	width: 100%;
-	background: #f0f0f0;
+	background: white;
 }
-.logo {
+.header-logo {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	width: 270px;
 	padding: 10px;
 }
-.logo img {
+.header-logo img {
 	width: 60px;
 	margin-right: 40px;
 }
-.name {
+.header-name {
 	font-size: 22px;
 	color: #776A5E;
 }
@@ -38,5 +79,46 @@ header {
 	color: #776A5E;
 }
 main {
-	margin-top: 80px;
+	margin-top: 70px;
+}
+.first-block {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	width: 100%;
+	height: 550px;
+	background: #f0f0f0 url(../images/banner.png);
+	background-position: center;
+}
+.first-block-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 450px;
+	/*justify-content: space-around;*/
+}
+.first-block-content img {
+	width: 240px;
+	margin-bottom: 20px;
+}
+.first-block-name {
+	font-size: 50px;
+	color: white;
+	margin-bottom: 25px;
+}
+.tagline {
+	font-size: 24px;
+	color: white;
+	margin-bottom: 45px;
+}
+.first-block-content button {
+	border-radius: 6px;
+	padding: 5px 10px;
+	border: 2px solid white;
+	/*display: inline-block;*/
+	font-size: 20px;
+	color: white;
+	background-color: transparent;
+	cursor: pointer;
 }
