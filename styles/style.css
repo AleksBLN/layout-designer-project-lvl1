@@ -111,7 +111,6 @@ main {
 	flex-direction: column;
 	align-items: center;
 	height: 450px;
-	/*justify-content: space-around;*/
 }
 .first-block-content img {
 	width: 240px;
@@ -127,15 +126,19 @@ main {
 	color: white;
 	margin-bottom: 45px;
 }
-.first-block-content button {
-	border-radius: 6px;
-	padding: 5px 10px;
+.btn {
 	border: 2px solid white;
 	font-size: 20px;
+	text-align: center;
 	color: white;
-	background-color: transparent;
-	cursor: pointer;
-}
+    display: inline-block; 
+    background-color: transparent; 
+    color: #fff; 
+    padding: 10px 10px; 
+    text-decoration: none; 
+    border-radius: 6px; 
+    cursor: pointer;
+ }
 .presentation-block {
 	display: flex;
 	align-items: center;
@@ -144,11 +147,13 @@ main {
 	margin: 0;
 }
 .content-block {
-	margin-top: 70px;
-	margin-bottom: 70px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+}
+.content-indent {
+	margin-top: 70px;
+	margin-bottom: 70px;
 }
 .main-h2 {
 	font-size: 30px;
@@ -174,4 +179,62 @@ main {
 }
 .about-text {
 	width: 50%;
+}
+.column {
+	flex-direction: column;
+}
+.header-feedback {
+	margin-bottom: 25px;
+}
+.feedback-field {
+	border: solid 2px #00BE9A;
+	margin: 5px;
+	padding: 10px;
+	font-size: 24px;
+	width: 400px;
+	color: #1CCAA8;
+}
+.feedback {
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+legend {
+	padding: 3px;
+	font-weight: 900;
+}
+.feedback-field label {
+	font-size: 18px;
+	font-weight: 700;
+	color: #3C3C3C;
+}
+
+fieldset input {
+	float: right;
+	border-radius: 7px;
+	height: 21px;
+	border: 1px solid #787878;
+	outline: none;
+}
+fieldset select {
+	margin-right: 45px;
+	float: right;
+	border-radius: 7px;
+	height: 30px;
+	width: 150px;
+	border: 1px solid #787878;
+	outline: none;
+}
+fieldset p {
+	margin: 10px;
+}
+.button {
+	margin: 4px;
+	border-radius: 6px;
+	padding: 8px 18px;
+	border: 2px solid #00BE9A;
+	font-size: 18px;
+	font-weight: 700;
+	color: #1CCAA8;
+	background-color: transparent;
+	cursor: pointer;
 }
