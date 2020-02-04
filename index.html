@@ -9,31 +9,30 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header>
-        <div class="header-logo">
+    <header class="flex align-c justify-sb">
+        <div class="header-logo flex align-c justify-c">
             <img src="images/logo.svg" alt="logo">
             <span class="header-logo-name">Лунное море</span>
         </div>
         <nav>
-            <ul class="header-nav">
-                <li>Преимущества</li>
-                <li>О ЖК</li>
-                <li>Места для отдыха</li>
+            <ul class="header-nav flex align-c justify-c">
+                <li><a href="#advantages">Преимущества</a></li>
+                <li><a href="#about">О ЖК</a></li>
+                <li><a href="#places">Места для отдыха</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="first-block">
-            <div class="first-block-content">
+        <div class="first-block flex align-c justify-c">
+            <div class="flex align-c column first-block-content">
                 <img src="images/logo.svg" alt="logo">
                 <span class="first-block-name">ЖК «Лунное море»</span>
                 <span class="tagline">Место, откуда не хочется улетать</span>
                 <p><a href="#reserve" class="btn">Забронировать</a></p>
-                <!-- <button>Забронировать</button> -->
             </div>
         </div>
-        <div class="presentation-block">
-            <div class="content-block width-1400 content-indent">
+        <div class="flex column align-c justify-c">
+            <div id="advantages" class="flex justify-sb width-1400 content-indent">
                 <div class="advantage">
                     <h2 class="main-h2">Уникальный вид</h2>
                     <p class="main-text">Вид на космос из вашего окна. Мы построили дома с большими окнами, чтобы вы могли наслаждаться метеоритными потоками.</p>
@@ -47,22 +46,22 @@
                     <p class="main-text">При небольшой цене мы располагаемся близко к МКАД. Всего 384 000 километров и вы в самом сердце России.</p>
                 </div>
             </div>
-            <div class="about-block content-background width-100perc">
-                <div class="content-block width-1000 content-indent">
+            <div id="about" class="flex align-c justify-c content-background width-100perc">
+                <div class="flex justify-sb width-1000 content-indent">
                     <div class="about-text">
                         <h2 class="main-h2">О ЖК «Лунное море»</h2>
                         <p class="main-text">Все чаще жители Москвы предпочитают загородный дом городской квартире, к тому же связь с мегаполисом не теряется – современные скоростные трассы позволяют без труда добираться до столицы и обратно.</p>
                         <p class="main-text">Мы построили наши дома на самом близком к Солнцу спутнике, всего в 380 тысяч километров от Земли.</p>
                     </div>
                     <div class="image">
-                        <img src="images/moon-1.jpg" alt="moon image" width="100%">
+                        <img src="images/moon-1.jpg" alt="moon image">
                     </div>
                 </div>
             </div>
-            <div class="about-block width-100perc">
-                <div class="content-block width-1000 content-indent">
+            <div id="places" class="flex align-c justify-c width-100perc">
+                <div class="flex justify-sb width-1000 content-indent">
                     <div class="image">
-                        <img src="images/moon-2.jpg" alt="moon chill" width="100%">
+                        <img src="images/moon-2.jpg" alt="moon chill">
                     </div>
                     <div class="about-text">
                         <h2 class="main-h2">Места для отдыха</h2>
@@ -72,13 +71,13 @@
                 </div>
             </div>
         </div>
-        <div class="feedback about-block content-background column">
+        <div class="feedback flex align-c justify-c content-background column">
             <h2 class="main-h2 header-feedback">Оставьте заявку сегодня!</h2> 
             <form id="reserve">
                 <fieldset class="feedback-field">
                     <legend>Параметры квартиры</legend>
 
-                    <p><label for="rooms">Количество комнат:</label>
+                    <p><label>Количество комнат:</label>
                         <select>
                             <option>1</option>
                             <option>2</option>
@@ -86,7 +85,7 @@
                         </select>
                     </p>
 
-                    <p><label for="rooms">Отделка:</label>
+                    <p><label>Отделка:</label>
                         <select>
                             <option>Без отделки</option>
                             <option>Комфорт</option>
@@ -101,20 +100,20 @@
 
                     <p><label for="tele">Телефон:</label><input type="tel" id="tele"></p>
 
-                    <p><label for="mail">E-mail:</label><input type="email id="mail"></p>
+                    <p><label for="mail">E-mail:</label><input type="email" id="mail"></p>
                 </fieldset>
                 <p><input class="button" type="submit" value="Отправить"></p>
             </form>
         </div>
     </main>
     <footer>
-        <div class="content-indent footer">
+        <div class="flex content-indent footer">
             <div class="footer-part">
-                <div class="footer-logo">
+                <div class="flex align-c footer-logo">
                     <img src="images/logo.svg" alt="logo">
                     <span class="footer-logo-name">Лунное море</span>
                 </div>
-                <span class="copyright">&copy 2032 год</span>
+                <span class="copyright">&copy; 2032 год</span>
             </div>
             <div class="footer-part">
                 <h2 class="footer-h2">Проектная документация</h2>
