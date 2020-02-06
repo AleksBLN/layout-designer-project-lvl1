@@ -1,2 +1,2 @@
-Учебный проект по основам верстки
-[layout-designer-project-lvl1.surge.sh](layout-designer-project-lvl1.surge.sh)
+Учебный проект по основам верстки:  
+[ссылка на проект](http://layout-designer-project-lvl1.surge.sh/ "http://layout-designer-project-lvl1.surge.sh/")
