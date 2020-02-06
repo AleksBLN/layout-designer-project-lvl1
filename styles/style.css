@@ -51,11 +51,11 @@ a {
 :root {
 	--header-height: 70px;
 }
-.width-1400 {
-	width: 1400px;
-}
 .width-1000 {
 	width: 1000px;
+}
+.width-900 {
+	width: 900px;
 }
 .width-100perc {
 	width: 100%;
@@ -95,14 +95,14 @@ header {
 	margin-right: 40px;
 }
 .header-logo-name {
-	font-size: 22px;
+	font-size: 18px;
+	font-weight: 700;
 	color: #776A5E;
 }
-.header-nav {
-}
-.header-nav li {
+header li {
 	margin-right: 35px;
-	font-size: 22px;
+	font-size: 16px;
+	font-weight: 700;
 	color: #776A5E;
 }
 main {
@@ -151,19 +151,24 @@ a.btn:active,
 	margin-top: 70px;
 	margin-bottom: 70px;
 }
+.h2-font {
+	font-family: Arial, Helvetica, sans-serif;
+}
 .main-h2 {
-	font-size: 30px;
+	font-size: 28px;
+	color: #252f40;
+	font-weight: 700;
 	margin-bottom: 14px;
 }
 .main-text {
-	font-size: 20px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #252f40;
 	margin-bottom: 12px;
 }
 .advantage {
-	width: 440px;
-}
-.content {
-	width: 1000px;
+	width: 320px;
 }
 .image {
 	width: 35%;
@@ -181,7 +186,7 @@ a.btn:active,
 	border: solid 2px #00BE9A;
 	margin: 5px;
 	padding: 10px;
-	font-size: 24px;
+	font-size: 20px;
 	width: 400px;
 	color: #1CCAA8;
 }
@@ -191,32 +196,33 @@ a.btn:active,
 }
 legend {
 	padding: 3px;
-	font-weight: 900;
+	font-weight: 700;
 }
 .feedback-field label {
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 700;
 	color: #3C3C3C;
 }
-
 fieldset input {
 	float: right;
 	border-radius: 7px;
 	height: 21px;
+	width: 180px;
 	border: 1px solid #787878;
 	outline: none;
 }
 fieldset select {
-	margin-right: 45px;
+	background-color: white;
+	margin-right: 35px;
 	float: right;
 	border-radius: 7px;
-	height: 30px;
+	height: 25px;
 	width: 150px;
 	border: 1px solid #787878;
 	outline: none;
 }
 fieldset p {
-	margin: 10px;
+	margin: 12px;
 }
 .button {
 	margin: 4px;
@@ -258,7 +264,7 @@ footer {
 }
 .footer-h2 {
 	color: #d1d2d5;
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: 700;
 	margin-bottom: 15px;
 }
@@ -266,5 +272,3 @@ footer ul {
 	list-style-type: disc;
 	padding-left: 30px;
 }
-
-
