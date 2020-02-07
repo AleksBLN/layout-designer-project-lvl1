@@ -63,7 +63,7 @@ a {
 .content-background {
 	background: #f7f7f7;
 }
-header {
+.landing-header {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -91,15 +91,15 @@ header {
 	padding: 10px;
 }
 .header-logo img {
-	width: 60px;
-	margin-right: 40px;
+	width: 40px;
+	margin-right: 20px;
 }
 .header-logo-name {
 	font-size: 18px;
 	font-weight: 700;
 	color: #776A5E;
 }
-header li {
+.landing-header li {
 	margin-right: 35px;
 	font-size: 16px;
 	font-weight: 700;
@@ -108,21 +108,20 @@ header li {
 main {
 	margin-top: var(--header-height);
 }
-.first-block {
+.banner {
 	margin: 0;
 	width: 100%;
-	height: 550px;
 	background: #f0f0f0 url(../images/banner.png);
 	background-position: center;
 }
-.first-block-content {
+.banner-content {
 	height: 450px;
 }
-.first-block-content img {
+.banner-content img {
 	width: 240px;
 	margin-bottom: 20px;
 }
-.first-block-name {
+.banner-name {
 	font-size: 50px;
 	color: white;
 	margin-bottom: 25px;
@@ -132,24 +131,9 @@ main {
 	color: white;
 	margin-bottom: 45px;
 }
-a.btn:hover,
-a.btn:active,
-.btn {
-	border: 2px solid white;
-	font-size: 20px;
-	text-align: center;
-	color: white;
-    display: inline-block; 
-    background-color: transparent; 
-    color: #fff; 
-    padding: 10px 10px; 
-    text-decoration: none; 
-    border-radius: 6px; 
-    cursor: pointer;
- }
 .content-indent {
-	margin-top: 70px;
-	margin-bottom: 70px;
+	padding-top: 70px;
+	padding-bottom: 70px;
 }
 .h2-font {
 	font-family: Arial, Helvetica, sans-serif;
@@ -224,16 +208,27 @@ fieldset select {
 fieldset p {
 	margin: 12px;
 }
-.button {
+.btn {
+ 	font-size: 18px;
+	font-weight: 700;
+ 	background-color: transparent; 
+ 	border-radius: 6px;
+ 	cursor: pointer;
+ }
+a.btn-white:hover,
+a.btn-white:active,
+.btn-white {
+	border: 2px solid white;
+	color: white;
+    display: inline-block;  
+    padding: 10px 10px; 
+    text-decoration: none; 
+ }
+.btn-green {
 	margin: 4px;
-	border-radius: 6px;
 	padding: 8px 18px;
 	border: 2px solid #00BE9A;
-	font-size: 18px;
-	font-weight: 700;
 	color: #1CCAA8;
-	background-color: transparent;
-	cursor: pointer;
 }
 footer {
 	border: solid #2d3544;
