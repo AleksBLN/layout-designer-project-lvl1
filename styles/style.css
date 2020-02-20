@@ -87,8 +87,7 @@ a {
 	justify-content: space-between;
 }
 .header-logo {
-	width: 270px;
-	padding: 10px;
+	margin-left: 25px;
 }
 .header-logo img {
 	width: 40px;
@@ -109,26 +108,27 @@ main {
 	margin-top: var(--header-height);
 }
 .banner {
-	margin: 0;
 	width: 100%;
 	background: #f0f0f0 url(../images/banner.png);
 	background-position: center;
 }
-.banner-content {
-	height: 450px;
-}
-.banner-content img {
+.banner img {
 	width: 240px;
 	margin-bottom: 20px;
 }
-.banner-name {
+.f50 {
 	font-size: 50px;
+}
+.f24 {
+	font-size: 24px;
+}
+.white {
 	color: white;
+}
+.m-b25 {
 	margin-bottom: 25px;
 }
-.tagline {
-	font-size: 24px;
-	color: white;
+.m-b45 {
 	margin-bottom: 45px;
 }
 .content-indent {
@@ -214,6 +214,7 @@ fieldset p {
  	background-color: transparent; 
  	border-radius: 6px;
  	cursor: pointer;
+ 	margin: 4px;
  }
 a.btn-white:hover,
 a.btn-white:active,
@@ -225,7 +226,6 @@ a.btn-white:active,
     text-decoration: none; 
  }
 .btn-green {
-	margin: 4px;
 	padding: 8px 18px;
 	border: 2px solid #00BE9A;
 	color: #1CCAA8;
