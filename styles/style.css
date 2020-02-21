@@ -24,7 +24,10 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #252f40;
 }
 ol, ul {
 	list-style: none;
@@ -51,17 +54,19 @@ a {
 :root {
 	--header-height: 70px;
 }
-.width-1000 {
+.container {
 	width: 1000px;
-}
-.width-900 {
-	width: 900px;
+	padding-top: 70px;
+	padding-bottom: 70px;
 }
 .width-100perc {
 	width: 100%;
 }
 .content-background {
 	background: #f7f7f7;
+}
+.footer-background {
+	background: #2d3544;
 }
 .landing-header {
 	position: fixed;
@@ -74,17 +79,20 @@ a {
 .flex {
 	display: flex;
 }
-.align-c {
+.align-items-c {
 	align-items: center;
 }
-.column {
+.flex-direction-column {
 	flex-direction: column;
 }
-.justify-c {
+.justify-cont-center {
 	justify-content: center;
 }
-.justify-sb {
+.justify-cont-space-b {
 	justify-content: space-between;
+}
+.justify-cont-space-ar {
+	justify-content: space-around;
 }
 .header-logo {
 	margin-left: 25px;
@@ -125,15 +133,14 @@ main {
 .white {
 	color: white;
 }
-.m-b25 {
+.margin-bottom-12 {
+	margin-bottom: 12px;
+}
+.margin-bottom-25 {
 	margin-bottom: 25px;
 }
-.m-b45 {
+.margin-bottom-45 {
 	margin-bottom: 45px;
-}
-.content-indent {
-	padding-top: 70px;
-	padding-bottom: 70px;
 }
 .h2-font {
 	font-family: Arial, Helvetica, sans-serif;
@@ -144,15 +151,8 @@ main {
 	font-weight: 700;
 	margin-bottom: 14px;
 }
-.main-text {
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	font-size: 16px;
-	line-height: 1.5;
-	color: #252f40;
-	margin-bottom: 12px;
-}
-.advantage {
-	width: 320px;
+.width-32per {
+	width: 32%;
 }
 .image {
 	width: 35%;
@@ -162,6 +162,7 @@ main {
 }
 .about-text {
 	width: 50%;
+	padding: 15px;
 }
 .header-feedback {
 	margin-bottom: 25px;
@@ -174,10 +175,7 @@ main {
 	width: 400px;
 	color: #1CCAA8;
 }
-.feedback {
-	padding-top: 70px;
-	padding-bottom: 70px;
-}
+
 legend {
 	padding: 3px;
 	font-weight: 700;
@@ -230,10 +228,6 @@ a.btn-white:active,
 	border: 2px solid #00BE9A;
 	color: #1CCAA8;
 }
-footer {
-	border: solid #2d3544;
-	background-color: #2d3544;
-}
 .footer-logo {
 	width: 180px;
 	padding: 10px;
@@ -253,9 +247,6 @@ footer {
 }
 .footer-part {
 	color: #d1d2d5;
-}
-.footer {
-	justify-content: space-around;
 }
 .footer-h2 {
 	color: #d1d2d5;
