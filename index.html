@@ -10,8 +10,8 @@
 </head>
 <body>
     <header class="landing-header flex align-items-c justify-cont-space-b">
-        <div class="header-logo flex align-items-c justify-cont-center">
-            <img src="images/logo.svg" alt="logo">
+        <div class="margin-left-25 flex align-items-c justify-cont-center">
+            <img class="header-logo-img" src="images/logo.svg" alt="logo">
             <span class="header-logo-name h2-font">Лунное море</span>
         </div>
         <nav>
@@ -24,15 +24,15 @@
     </header>
     <main>
         <div class="banner flex align-items-c justify-cont-center">
-            <div class="flex align-items-c flex-direction-column h2-font container">
+            <div class="flex align-items-c flex-direction-column h2-font width-1000px">
                 <img src="images/logo.svg" alt="logo">
-                <span class="f50 white margin-bottom-25">ЖК «Лунное море»</span>
-                <span class="f24 white margin-bottom-45">Место, откуда не хочется улетать</span>
+                <span class="f50 white">ЖК «Лунное море»</span>
+                <span class="f20 white margin-bottom-10">Место, откуда не хочется улетать</span>
                 <p><a href="#reserve" class="btn btn-white">Забронировать</a></p>
             </div>
         </div>
         <div class="flex justify-cont-center">
-            <div id="advantages" class="flex justify-cont-space-b container">
+            <div id="advantages" class="flex justify-cont-space-b container width-1000px">
                 <div class="width-32per">
                     <h2 class="main-h2 h2-font">Уникальный вид</h2>
                     <p>Вид на космос из вашего окна. Мы построили дома с большими окнами, чтобы вы могли наслаждаться метеоритными потоками.</p>
@@ -47,38 +47,38 @@
                 </div>
             </div>
         </div>
-        <div class="flex justify-cont-center content-background">
-            <div id="about" class="flex align-items-c justify-cont-center container">
-                <div class="about-text">
+        <div class="flex justify-cont-center background-grey">
+            <div id="about" class="flex align-items-c justify-cont-center container width-1000px">
+                <div class="width-50per">
                     <h2 class="main-h2 h2-font">О ЖК «Лунное море»</h2>
                     <p class="margin-bottom-12">Все чаще жители Москвы предпочитают загородный дом городской квартире, к тому же связь с мегаполисом не теряется – современные скоростные трассы позволяют без труда добираться до столицы и обратно.</p>
                     <p>Мы построили наши дома на самом близком к Солнцу спутнике, всего в 380 тысяч километров от Земли.</p>
                 </div>
-                <div class="image">
-                    <img src="images/moon-1.jpg" alt="moon image">
+                <div class="width-35per">
+                    <img class="width-100per" src="images/moon-1.jpg" alt="moon image">
                 </div>
             </div>
         </div>
         <div class="flex justify-cont-center">
-            <div id="places" class="flex align-items-c justify-cont-center container">
-                <div class="image">
-                    <img src="images/moon-2.jpg" alt="moon chill">
+            <div id="places" class="flex align-items-c justify-cont-center container width-1000px">
+                <div class="width-35per padding-right-10">
+                    <img class="width-100per" src="images/moon-2.jpg" alt="moon chill">
                 </div>
-                <div class="about-text">
+                <div class="width-50per padding-left-10">
                     <h2 class="main-h2 h2-font">Места для отдыха</h2>
                     <p class="margin-bottom-12">Луна обладает всеми условиями для комфортного отдыха от большого города. В вашем распоряжении 22 моря и 18 гор. Самое ближайшее кольцо гор всего в 200 километров от вашей квартиры.</p>
                     <p>Дома располагаются в новом районе «Лунные моря». При необходимости есть автобусы до района «Лунный материк».</p>
-                </div> 
+                </div>
             </div>
         </div>
-        <div class="flex justify-cont-center content-background">
-            <div class="flex container align-items-c flex-direction-column">
-                <h2 class="main-h2 header-feedback h2-font">Оставьте заявку сегодня!</h2> 
+        <div class="flex justify-cont-center background-grey">
+            <div class="flex container width-1000px align-items-c flex-direction-column">
+                <h2 class="main-h2 margin-bottom-25 h2-font">Оставьте заявку сегодня!</h2>
                 <form id="reserve">
                     <fieldset class="feedback-field h2-font">
                         <legend>Параметры квартиры</legend>
 
-                        <p><label>Количество комнат:</label>
+                        <p class="margin-12"><label>Количество комнат:</label>
                             <select>
                                 <option>1</option>
                                 <option>2</option>
@@ -86,7 +86,7 @@
                             </select>
                         </p>
 
-                        <p><label>Отделка:</label>
+                        <p class="margin-12"><label>Отделка:</label>
                             <select>
                                 <option>Без отделки</option>
                                 <option>Комфорт</option>
@@ -97,11 +97,11 @@
                     <fieldset class="feedback-field h2-font">
                         <legend>Контактная информация</legend>
 
-                        <p><label for="name">Имя:</label><input type="text" id="name"></p>
+                        <p class="margin-12"><label for="name">Имя:</label><input type="text" id="name"></p>
 
-                        <p><label for="tele">Телефон:</label><input type="tel" id="tele"></p>
+                        <p class="margin-12"><label for="tele">Телефон:</label><input type="tel" id="tele"></p>
 
-                        <p><label for="mail">E-mail:</label><input type="email" id="mail"></p>
+                        <p class="margin-12"><label for="mail">E-mail:</label><input type="email" id="mail"></p>
                     </fieldset>
                     <p><input class="btn btn-green" type="submit" value="Отправить"></p>
                 </form>
@@ -109,28 +109,28 @@
         </div>
     </main>
     <footer class="h2-font flex justify-cont-center footer-background">
-        <div class="flex justify-cont-space-b container">
-            <div class="footer-part">
+        <div class="flex justify-cont-space-b container width-1000px">
+            <div class="light-gray-color">
                 <div class="flex align-items-c footer-logo">
                     <img src="images/logo.svg" alt="logo">
                     <span class="footer-logo-name">Лунное море</span>
                 </div>
                 <span class="copyright">&copy; 2032 год</span>
             </div>
-            <div class="footer-part">
-                <h2 class="footer-h2">Проектная документация</h2>
+            <div class="light-gray-color">
+                <h2 class="light-gray-color footer-h2">Проектная документация</h2>
                 <ul>
                     <li>Скачать</li>
                     <li>Посмотреть на сайте</li>
                 </ul>
-            </div> 
-            <div class="footer-part">
-                <h2 class="footer-h2">О застройщике</h2>
+            </div>
+            <div class="light-gray-color">
+                <h2 class="light-gray-color footer-h2">О застройщике</h2>
                 <ul>
                     <li>Отзывы</li>
                     <li>Сайт компании</li>
                 </ul>
-            </div> 
+            </div>
         </div>
     </footer>
 </body>

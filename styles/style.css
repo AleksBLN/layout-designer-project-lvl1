@@ -7,8 +7,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -18,8 +18,8 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
- HTML5 display-role reset for older browsers 
-article, aside, details, figcaption, figure, 
+ HTML5 display-role reset for older browsers
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -55,14 +55,25 @@ a {
 	--header-height: 70px;
 }
 .container {
-	width: 1000px;
 	padding-top: 70px;
 	padding-bottom: 70px;
 }
-.width-100perc {
+.width-1000px {
+	width: 1000px
+}
+.width-100per {
 	width: 100%;
 }
-.content-background {
+.width-50per {
+	width: 50%;
+}
+.width-35per {
+	width: 35%;
+}
+.width-32per {
+	width: 32%;
+}
+.background-grey {
 	background: #f7f7f7;
 }
 .footer-background {
@@ -94,10 +105,10 @@ a {
 .justify-cont-space-ar {
 	justify-content: space-around;
 }
-.header-logo {
+.margin-left-25 {
 	margin-left: 25px;
 }
-.header-logo img {
+.header-logo-img {
 	width: 40px;
 	margin-right: 20px;
 }
@@ -117,21 +128,28 @@ main {
 }
 .banner {
 	width: 100%;
+	padding: 30px 0;
 	background: #f0f0f0 url(../images/banner.png);
-	background-position: center;
+	background-position: 20% 65%;
+	background-size: 135%;
 }
 .banner img {
-	width: 240px;
-	margin-bottom: 20px;
+	width: 180px;
+	margin-bottom: 15px;
+
 }
 .f50 {
 	font-size: 50px;
+	line-height: 105%;
 }
-.f24 {
-	font-size: 24px;
+.f20 {
+	font-size: 20px;
 }
 .white {
 	color: white;
+}
+.margin-bottom-10 {
+	margin-bottom: 10px;
 }
 .margin-bottom-12 {
 	margin-bottom: 12px;
@@ -139,8 +157,14 @@ main {
 .margin-bottom-25 {
 	margin-bottom: 25px;
 }
-.margin-bottom-45 {
-	margin-bottom: 45px;
+.margin-12 {
+	margin: 12px;
+}
+.padding-left-10 {
+	padding-left: 10px;
+}
+.padding-right-10 {
+	padding-right: 10px;
 }
 .h2-font {
 	font-family: Arial, Helvetica, sans-serif;
@@ -151,22 +175,6 @@ main {
 	font-weight: 700;
 	margin-bottom: 14px;
 }
-.width-32per {
-	width: 32%;
-}
-.image {
-	width: 35%;
-}
-.image img {
-	width: 100%;
-}
-.about-text {
-	width: 50%;
-	padding: 15px;
-}
-.header-feedback {
-	margin-bottom: 25px;
-}
 .feedback-field {
 	border: solid 2px #00BE9A;
 	margin: 5px;
@@ -175,7 +183,6 @@ main {
 	width: 400px;
 	color: #1CCAA8;
 }
-
 legend {
 	padding: 3px;
 	font-weight: 700;
@@ -203,13 +210,10 @@ fieldset select {
 	border: 1px solid #787878;
 	outline: none;
 }
-fieldset p {
-	margin: 12px;
-}
 .btn {
  	font-size: 18px;
 	font-weight: 700;
- 	background-color: transparent; 
+ 	background-color: transparent;
  	border-radius: 6px;
  	cursor: pointer;
  	margin: 4px;
@@ -219,9 +223,9 @@ a.btn-white:active,
 .btn-white {
 	border: 2px solid white;
 	color: white;
-    display: inline-block;  
-    padding: 10px 10px; 
-    text-decoration: none; 
+    display: inline-block;
+    padding: 10px 10px;
+    text-decoration: none;
  }
 .btn-green {
 	padding: 8px 18px;
@@ -245,11 +249,10 @@ a.btn-white:active,
 	color: #d1d2d5;
 	padding: 10px;
 }
-.footer-part {
+.light-gray-color {
 	color: #d1d2d5;
 }
 .footer-h2 {
-	color: #d1d2d5;
 	font-size: 18px;
 	font-weight: 700;
 	margin-bottom: 15px;
