@@ -1,2 +1,2 @@
 Учебный проект по основам верстки  
-[ссылка на проект](http://layout-designer-project-lvl1.surge.sh/ "http://layout-designer-project-lvl1.surge.sh/")
+[ссылка на проект](http://hexlet-landing.surge.sh/ "http://hexlet-landing.surge.sh/")
