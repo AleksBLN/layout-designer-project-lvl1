@@ -54,18 +54,7 @@ a {
 :root {
 	--header-height: 70px;
 }
-nav {
-	text-align: right;
-}
-nav label {
-	font-size: 26px;
-	color: #776A5E;
-	margin: 0 35px 0 0;
-	display: none;
-}
-nav input {
-	display: none;
-}
+
 .container {
 	padding-top: 70px;
 	padding-bottom: 70px;
