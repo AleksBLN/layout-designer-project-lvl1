@@ -9,18 +9,25 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header class="landing-header flex align-items-c justify-cont-space-b">
-        <div class="margin-left-25 flex align-items-c justify-cont-center">
+    <header class="header">
+        <input id="nav-toggle" type="checkbox">
+        <div class="header-logo">
             <img class="header-logo-img" src="images/logo.svg" alt="logo">
             <span class="header-logo-name h2-font">Лунное море</span>
         </div>
-        <nav>
-            <ul class="h2-font flex align-items-c justify-cont-center">
-                <li class="first"><a href="#advantages">Преимущества</a></li>
-                <li class="second"><a href="#about">О ЖК</a></li>
+        <nav class="nav">
+            <ul class="links">
+                <li><a href="#advantages">Преимущества</a></li>
+                <li><a href="#about">О ЖК</a></li>
                 <li><a href="#places">Места для отдыха</a></li>
             </ul>
         </nav>
+        <label for="nav-toggle" class="icon-burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </label>
+
     </header>
     <main>
         <div class="banner flex align-items-c justify-cont-center">
@@ -32,7 +39,7 @@
             </div>
         </div>
         <div class="flex justify-cont-center">
-            <div id="advantages" class="flex justify-cont-space-b container max-width-1000px padding-right-10 padding-left-10">
+            <div id="advantages" class="flex justify-cont-space-b container max-width-1000px p-lr-20">
                 <div class="advantages-item">
                     <h2 class="main-h2 h2-font">Уникальный вид</h2>
                     <p>Вид на космос из вашего окна. Мы построили дома с большими окнами, чтобы вы могли наслаждаться метеоритными потоками.</p>
