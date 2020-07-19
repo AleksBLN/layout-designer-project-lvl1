@@ -1,0 +1,83 @@
+@media only screen and (max-width: 650px) {
+  header .nav {
+    float: none;
+    position: fixed;
+    z-index: 9;
+    left: 0;
+    right: 0;
+    top: var(--header-height);
+    bottom: 100%;
+    background-color: #fff;
+    width: auto;
+    height: auto;
+    max-height: 30%;
+    border-top: 1px solid #776A5E;
+    border-bottom: 1px solid #776A5E;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+  }
+  header .links {
+    flex-direction: column;
+    justify-content: space-around;
+    height: auto;
+  }
+  header .nav a {
+    font-size: 20px;
+  }
+  header .icon-burger {
+    display: block;
+  }
+  header .icon-burger:hover .line {
+  	background-color: #00BE9A;
+  }
+  header .icon-burger .line {
+    transition: all .3s ease-in-out;
+  }
+  header :checked ~ .nav {
+    bottom: 0;
+  }
+  header :checked ~ .icon-burger .line:nth-child(1) {
+    transform: translateY(10px) rotate(225deg);
+  }
+  header :checked ~ .icon-burger .line:nth-child(3) {
+    transform: translateY(-10px) rotate(-225deg);
+  }
+  header :checked ~ .icon-burger .line:nth-child(2) {
+    opacity: 0;
+  }
+	.advantages-item {
+		width: 80%;
+	}
+	footer {
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+	.footer-item{
+		display: flex;
+	}
+	footer .footer-logo {
+		width: 180px;
+		margin: 5px 0 0 0;
+	}
+	.footer-about {
+		margin: 0 0 7px 45px;
+	}
+	.footer-item-logo {
+		margin-right: 10px;
+	}
+	.footer-h2 {
+		text-align: right;
+	}
+	body .main-h2 {
+		text-align: center;
+		font-size: 24px;
+	}
+	body .company-name {
+		font-size: 40px;
+		text-align: center;
+	}
+	.container {
+		padding-top: 28px;
+		padding-bottom: 28px;
+	}
+}
